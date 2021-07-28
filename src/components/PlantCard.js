@@ -19,7 +19,7 @@ function PlantCard({onePlant: {name, image, price}}) {
       {!isClicked ? (
         <button onClick={toggleClick} className="primary"> In Stock</button>
       ) : (
-        <button>Out of Stock</button>
+        <button onClick={toggleClick}>Out of Stock</button>
       )}
     </li>
   );
